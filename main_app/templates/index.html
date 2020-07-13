@@ -28,9 +28,18 @@
       <tr>
         <td>{{ widget.description }}</td>
         <td>{{ widget.quantity }}</td>
-        <td><a>X</a></td>
+     
+        <td>
+          <a href="{{ widget.id}}/delete">X</a>
+        </td>
+        
       </tr>
       {% endfor %}
+      <tr>
+        <td>Total Quantity</td>
+        <td>{{ total }}</td>
+        <td></td>
+      </tr>
     </tbody>
 
   </table>
